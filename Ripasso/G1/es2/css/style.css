@@ -1,0 +1,29 @@
+#padre{
+    background-color: aqua; 
+    border:solid black  1px; 
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#figlio1{
+    width: 30%; 
+    height: 30%;
+    background-color: blueviolet; 
+       
+}
+
+#figlio2{
+    width: 30%; 
+    height: 30%;
+    background-color: blueviolet; 
+    
+}
+
+#figlio3{
+    width: 30%; 
+    height: 30%;
+    background-color: blueviolet; 
+      
+}
