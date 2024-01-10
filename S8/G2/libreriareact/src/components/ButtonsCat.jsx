@@ -1,20 +1,20 @@
 import React from "react";
 import  Button  from "react-bootstrap/Button";
-import Fantasy from "../../../json/fantasy.json"
+
 const importCategories = async (myCategory) =>{
     let dataList = [];
 
         const categoryName = myCategory.toLowerCase()
-        const filePath = `../../../json/${categoryName}.json`
+        const filePath = `../../json/${categoryName}.json`
 
-        // try {
+         try {
             const module = await import(filePath);
             console.log(module);
             dataList.push(module.default);
-        // } catch (error) {
-            // console.error(`Errore caricamento per la categoria ${myCategory}:`, error);
-            // dataList.push([]);
-        // }
+        } catch (error) {
+            console.error(`Errore caricamento per la categoria ${myCategory}:`, error);
+            dataList.push([]);
+        }
     return dataList
 }
 
