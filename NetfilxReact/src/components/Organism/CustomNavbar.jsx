@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CustomDropdown from '../Molecole/CustomDropdown';
 import IconNavbar from '../Molecole/IconNavbar';
+import {Link} from 'react-router-dom'
 const CustomNavbar =() =>{
     return (
     <>
@@ -19,11 +20,11 @@ const CustomNavbar =() =>{
                 </Navbar.Brand>
             
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#">TV Show</Nav.Link>
-              <Nav.Link href="#">Movies</Nav.Link>
-              <Nav.Link href="#">Recently Added</Nav.Link>
-              <Nav.Link href="#">My List</Nav.Link>
+              <Link to="/" className='nav-link text-light'>Home</Link>
+              <Link href="#"  className='nav-link text-light'>TV Show</Link>
+              <Link href="#"  className='nav-link text-light'>Movies</Link>
+              <Link href="#"  className='nav-link text-light'>Recently Added</Link>
+              <Link href="#" className='nav-link text-light'>My List</Link>
             </Nav>
           </Container>
           <IconNavbar/>

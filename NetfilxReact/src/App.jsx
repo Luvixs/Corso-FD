@@ -1,16 +1,19 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import CustomNavbar from './components/Organism/CustomNavbar';
+import Account from './components/Page/Account';
 import Main from './components/Organism/Main';
 import CustomFooter from './components/Organism/CustomFooter';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
  
   return (
     <>
-      <CustomNavbar/>
-      <Main/>
+      <Routes>
+      <Route path='/' element={ <Main/>}></Route>
+      <Route path='/account' element={ <Account/>}></Route>
+      </Routes>
       <CustomFooter/>
     </>
   )
