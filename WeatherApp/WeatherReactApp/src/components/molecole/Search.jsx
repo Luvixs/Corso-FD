@@ -8,7 +8,7 @@ const Search = ({searchWeather}) => {
         <Form className="d-flex">
         <Form.Control
           type="text"
-          placeholder="Search"
+          placeholder="City"
           className="me-2"
           aria-label="Search"
           value={city}
